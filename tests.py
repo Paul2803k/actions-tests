@@ -1,13 +1,6 @@
-import unittest
+import pytest
 import main
 
-
-class TestMethods(unittest.TestCase):
-
-    def test_multiply(self):
-        res = main.multiply(4, 5)
-        self.assertEqual(res, 4 * 5)
-
-
-if __name__ == '__main__':
-    unittest.main()
+def test_mult():
+    res = main.multiply(3,4)
+    assert  res == 3*4
