@@ -25,11 +25,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Install Black
-      run: pip install black
+        pip install black
     - name: Test with pytest
-      run: |
-        pytest tests.py
+      run: pytest tests.py
     - name: Run black --check .
       run: black --check .
     - name: If needed, commit black changes to the pull request
