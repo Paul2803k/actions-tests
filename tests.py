@@ -8,7 +8,7 @@ def test_mult():
 
 def test_add():
     res = main.addition(3, 4)
-    assert res == 3 + 5
+    assert res == 3 + 4
 
 
 def test_div   ():
